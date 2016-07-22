@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+#register_head {
+    border-bottom: 2px solid #bc0e31;
+    overflow: hidden;
+}
+#register_head .head_main {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+    width: 1200px;
+}
+#register_head .head_main h2 {
+    float: left;
+}
+#register_head .head_main .right {
+    float: right;
+}
+a {
+    color: #333;
+}
+#register_head .head_main .right {
+    float: right;
+}
+.content::after, .wcontent::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.login {
+    padding: 30px 0;
+}
+.content, .wcontent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+.box-frame {
+    overflow: hidden;
+}
+.box-main {
+    padding: 0;
+}
+.mod-login-ads {
+    float: left;
+    text-align: center;
+    width: 770px;
+}
+.mod-login {
+    background: #fff url("img/loading.gif") no-repeat scroll center center;
+    padding: 4px;
+}
+.fr {
+    float: right !important;
+}
+.mod-login2 {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+}
+.mod-login-list {
+    background: rgba(0, 0, 0, 0) url("img/login_text.gif") no-repeat scroll 30px 25px;
+    padding: 70px 50px 0 35px;
+}
+.mod-login dl {
+    overflow: hidden;
+    padding: 8px 0;
+}
+.mod-login dd {
+    line-height: 20px;
+    width: 300px;
+}
+.mod-login .txt-user {
+    background: #fff url("img/hint_logname.gif") no-repeat scroll 5px 8px;
+}
+.mod-login .txt-input {
+    color: #666;
+    font-size: 14px;
+    height: 30px;
+    line-height: 32px;
+    padding: 0 5px;
+    width: 288px;
+}
+.bd-default {
+    border-color: #968d88 #ccbfb9 #ccbfb9 #968d88;
+    border-style: solid;
+    border-width: 1px;
+}
+.mod-login .txt-pass {
+    background: #fff url("img/hint-password.gif") no-repeat scroll 5px 8px;
+}
+.logon {
+    height: 20px;
+    margin-top: 6px;
+    padding-left: 18px;
+    position: relative;
+    width: 100%;
+}
+.logon input {
+    left: 0;
+    position: absolute;
+    top: 4px;
+}
+.mod-login .btn-login, .mod-login .btn-register {
+    background: rgba(0, 0, 0, 0) url("img/btn_login.gif") repeat-x scroll 0 0;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+    height: 40px;
+    width: 300px;
+}
+.mod-login .btn-login:hover{background: rgba(0, 0, 0, 0) url("img/btn_login_hover.gif") repeat-x scroll 0 0}
+#forget {
+    padding: 2px 0;
+}
+#forget a {
+    color: #3472b2;
+}
+.mod-login .partner {
+    border-top: 1px dotted #ccc;
+    color: #999;
+    margin-top: 15px;
+    padding: 0 30px 10px;
+}
+.mod-login .partner p.dotline {
+    margin-bottom: 2px;
+}
+.mod-login .partner p {
+    line-height: 32px;
+}
+.mod-login .partner p a.btn-login-weibo {
+    background: rgba(0, 0, 0, 0) url("img/btn_weibo.jpg") no-repeat scroll 0 0;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -10000px;
+    width: 96px;
+}
+.mod-login .partner p a {
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.mod-login .partner p a.btn-login-alipay {
+    background: rgba(0, 0, 0, 0) url("img/btn_alipay.jpg") no-repeat scroll 0 0;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -10000px;
+    width: 96px;
+}
+.footer {
+    float: left;
+    width: 100%;
+}
+.footer {
+    padding-bottom: 20px;
+}
+.footer-simp {
+    border-top: 1px solid #ccc;
+    margin:0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+.foot-license {
+    color: #999;
+    line-height: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+.foot-copyright {
+    color: #999;
+    line-height: 30px;
+    text-align: center;
+}
+
+.foot-license span.top100 {
+    background-position: -180px -230px;
+    padding-left: 22px;
+}
+.foot-license span {
+    background:url("img/bg_header2.png") no-repeat 200px -140px;
+    display: inline-block;
+    height: 20px;
+}
+
+.sep {
+    color: #ddd;
+    font-family: Arial;
+    margin: 0 5px;
+}
+.foot-license span.year18 {
+    background-position: -180px -250px;
+    padding-left: 22px;
+}
+.foot-license span.shzxw {
+    background-position: -180px -270px;
+    padding-left: 22px;
+}
+.foot-license span.shgs {
+    background-position: -180px -290px;
+    padding-left: 22px;
+}
+.foot-copyright .cx {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 356px;
+}
+.float {
+    float: left;
+}

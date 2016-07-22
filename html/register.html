@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="../css/landed.css"/>
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+<script src='../js/assets/jquery-1.12.0.js'></script>
+<script src='../js/assets/jquery-ui-1.11.4.custom/jquery-ui.js'></script>
+<script src='../js/form.js'></script>
+</head>
+
+<body>
+<div id="register_head">
+	<div class="head_main">
+    	<h2><a href=""><img src="../img/logo.png" alt="也买酒" /></a></h2>
+        <div class="right">
+    	<img src="../img/head_right.jpg" width="556" height="53" alt="真品保障 恒温恒湿 30天退货" />
+         </div>
+    </div>
+</div>
+<!--header end-->
+<div class="login content">
+	      <div class="box-main clearfix">
+	        <div class="mod-login fl">
+	          <h2>注册也买酒</h2>
+	          	<a class="blue" href="http://www.yesmywine.com/portal/toLogin.jspa" style="position: relative; top: -38px; left: 157px;color: #06c;">您可以使用QQ、支付宝、新浪微博登录</a>
+	          <form novalidate="novalidate" id="registerFrm" name="registerFrm" class="frm-register" action="/portal/quickRegister.jspa" method="post">
+	            <input class="hd-pagetype" name="pagetype" value="common" type="hidden">
+	            <input class="hd-crossdomain" name="crossdomain" value="" type="hidden">
+	            <input class="hd-to" name="to" value="" type="hidden">
+	            <input class="hd-inviteCode" name="inviteCode" value="" type="hidden">
+	            <dl>
+	              <dt>手机号码:</dt>
+	              <dd>
+						<input maxlength="11" name="registerMobile" class="txt-input error hint-user" type="text">
+						<div class="error registerMobileError errorInfo"><label class="error" for="registerMobile">请输入手机号</label></div>
+	             </dd>
+	            </dl>
+	            <dl>
+		            <dt>验证码:</dt>
+		            <dd>
+		              <input maxlength="4" id="imgCode" name="imgCode" class="txt-input txt-validcode txt-randcode txt-imgCode hint-randcode" type="text">
+		             	<ins> <img class="rand-img" src="../css/img/rand.jpg" title="点击图片刷新验证码" absmiddle="middle"></ins>
+		           		<div class="error imgCodeError hidden errorInfo"></div>
+		            </dd>
+		         </dl>
+	            <dl>
+		            <dt>短信验证码:</dt>
+		            <dd>
+		              <input maxlength="4" id="smsCode" name="smsCode" class="txt-input txt-validcode txt-randcode txt-smsCode hint-randcode" type="text">
+		              <span class="btn btn-style" onclick="javascript:getRandCode();" style="background-color: rgb(244, 95, 3);">获取短信验证码</span>
+		              <span class="showInfo" style="display: none;">请稍后...</span>
+		              <span class="info" style="display: none;"><em>120</em>秒后重新获取</span> 
+		              <div class="error smsCodeError hidden errorInfo"></div>
+		            </dd>
+		         </dl>
+		         <dl>
+	             <input style="display: none;" type="text">
+	              <dt>密　　码:</dt>
+	              <dd>
+	                <input value="" id="registerPassword" name="registerPassword" class="txt-input hint-pass" type="password">
+					<div class="error registerPasswordError hidden errorInfo"></div>
+	              </dd>
+	            </dl>
+	            <dl>
+	              <dt>密码确认:</dt>
+	              <dd>
+	                <input value="" name="registerPasswordRepeat" class="txt-input hint-pass2" type="password">
+					<div class="error registerPasswordRepeatError hidden errorInfo"></div>
+	              </dd>
+	            </dl>
+	            <dl>
+	                <label id="vip">
+	                <input value="1" name="toBeVip" class="chk-vip" type="checkbox">
+	                <span>我有VIP升级码</span> </label>
+	                <div id="vipinfo">
+	                  	<dt>升 级 码：</dt>
+                        <dd>
+	                    	<input value="" name="yjhId" class="txt-input txt-passcode hint-passcode" type="password">
+	                    	<div class="error yjhIdError hidden errorInfo">我有VIP升级</div>
+                        </dd>
+	                </div>
+	            </dl>
+	            <dl id="vip2">
+	                <label>
+	                	<input value="1" name="confirmClause" class="chk-clause" checked="checked" type="checkbox">
+	                	<span class="accept">我已满18周岁并接受</span>
+	                	<a title="也买酒服务条款" target="_blank" href="http://www.yesmywine.com/help/view.jspa?cid=13025" onclick="YM.page.dialog.pop({title:'阅读Yesmywine服务条款',url:'http://www.yesmywine.com/help/view.jspa?cid=13025&amp;type=popwin',width:800,height:400});return false;" class="blue">《也买酒服务条款》</a>
+	                	<div class="error confirmClauseError hidden errorInfo"></div>
+	                </label>
+	            </dl>
+	            <dl>
+	              <a disabled="false" class="btn-register">注册完成</a>
+	            </dl>
+	          </form>
+	        </div>
+	        
+			<div class="mod-login-note fr"> 
+				<!-- <span>已有也买账户？<a href="/portal/toLogin.jspa">点击立即登录</a></span>  -->
+				</div>
+	      </div>
+	  </div>
+
+
+<!--end-->
+<div id="footer" class="footer footer-simp">
+	<div class="foot-license"> 
+ <span class="top100">消费者最喜爱的网站TOP100</span> 
+ <span class="sep">|</span> 
+ <span class="year18">仅限18周岁以上人士购买</span> 
+ <span class="sep">|</span> 
+ <a target="_blank" href="" style="color:#999999;"><span class="shzxw">网络社会征信网</span></a> 
+ <span class="sep">|</span> 
+ <span class="shgs">上海工商</span> 
+ <span class="sep">|</span> 
+ <span>京公网安备11010502013828</span> 
+</div> 
+<div class="foot-copyright e-imageload">
+  Copyright 2006-2015 也买酒 yesmywine.com 版权所有 
+ <span class="sep">|</span> 
+ <a href="" target="_blank" style="color:#999">沪ICP备15036938号</a> 
+ <br /> 
+ <div class="cx">
+  <span class="float"> <a id="___szfw_logo___" href="" target="_blank"> <img src="../img/chengxin.png" width="112" height="40" align="absmiddle"  /></a></span> 
+  <span class="float" style="margin-left:10px;display:inline"><a href="" target="_block"><img src="../img/jiujiao.jpg" style="opacity: 1;" height="40" width="112" alt="沪公网备" /></a></span> 
+ </div> 
+</div></div>
+</body>
+</html>

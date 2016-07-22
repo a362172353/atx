@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录也买酒</title>
+<link rel="stylesheet" type="text/css" href="../css/landed.css"/>
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<script src='../js/assets/jquery-1.12.0.js'></script>
+    <script src='../js/assets/jquery-ui-1.11.4.custom/jquery-ui.js'></script>
+<script type="text/javascript" src='../js/landed.js'></script>
+</head>
+<body class="login-common">
+<div id="register_head">
+	<div class="head_main">
+    	<h2><a href=""><img src="../img/logo.png" alt="也买酒" /></a></h2>
+        <div class="right">
+    	<img src="../img/head_right.jpg" width="556" height="53" alt="真品保障 恒温恒湿 30天退货" />
+         </div>
+    </div>
+</div>
+<div class="wrapper">
+	<div class="login content" id="contents">
+		<div class="box-frame">
+			<div class="box-main clearfix">
+				<!-- 左侧广告begin -->
+			        <div class="mod-login-ads" id="login_ads" >
+			        	<a href="" title="登录页长期" target="_blank"><img src="../img/denglu.jpg" alt="登录页长期"  border="0"/></a>
+						</div>
+				
+		        <!-- 左侧广告end -->
+				<!-- 右侧注册部分begin -->
+		        <div class="mod-login fr" id="mod-login">
+		        <div class="mod-login2" id="mod-login2" data-dts="">
+		         	<div class="mod-login-list" id="mod-login-list">
+		            	 <form id="loginFrm" name="loginFrm" autocomplete="off" class="frm-login" action="/portal/login.jspa" method="post">
+		                   <input type="hidden" class="hd-pagetype" name="pagetype" value="common" />
+							<input type="hidden" class="hd-crossdomain" name="crossdomain" value="" />
+							<input type="hidden" class="hd-to" name="to" value='http://www.yesmywine.com/' />
+		            <dl>
+		              <dd>
+		              	<input type="text" value="" name="loginName" autocomplete="off" class="txt-input txt-user bd-default" />
+		              	</dd>
+		            </dl>
+		            <dl>
+		              <dd>
+		              <input type="text" style="display: none;"/>
+		              	<input type="password" value="" name="loginPassword" autocomplete="off" class="txt-input txt-pass bd-default">
+		              	</dd>
+		            </dl>
+			        <dl id="login_code" style="display:none">
+			              <dd>
+			                <p>
+			                  <input name="randCode" class="txt-input txt-rand bd-default" type="text" style="width: 75px;">
+			                  <img width="85" height="20" data-dts = "R410" class="rand-img"
+			                                            align="absmiddle" id="randPic"
+			                                            src="../img/rand.jpg" 
+			                                            alt="验证码" title="点击图片刷新验证码"> 
+			                  <a class="btn-refreshrand" href="#" onclick=''>换一张</a>
+			                   </p>
+			            
+			              </dd>
+			        </dl>
+		            <dl style="padding-top: 0">
+		              <dd class="logon">
+		                <!--//
+						        		<label><input name="remeberLoginName" type="checkbox" value="1" /> <span>记住用户名</span></label>
+						        		//-->
+		                <input type="checkbox" name="flagLoginSelf" data-dts = "R402" value="1" />自动登录
+		                 </dd>
+		            </dl>
+		            <dl>
+		              <dd>
+		                <button type="submit"  data-dts = "R403" class="btn-login">登&nbsp;&nbsp;&nbsp;录</button>
+		              </dd>
+		            </dl>
+		            <dl id="forget">
+		            	<dd><a id="forget-password" href="" title="忘记密码">[忘记密码？]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="register.html" target="_blank">[注册新账号]</a></dd>
+		            </dl>
+		          </form>
+		            </div>
+		            <div class="partner" id="partner">
+		               <p class="dotline" id="dotline">使用合作网站账号登录：</p>
+		               <p class="clearfix"> 
+		               <a id="weiboLoginBtn" href="#" class="btn-login-weibo">新浪微博登录</a> 
+		               
+		               <a class="btn-login-alipay" style="display: block;">支付宝快捷登录</a> 
+		               <span id="btn-login-qq" data-dts = "R406">
+		               	<a href="javascript:;" ><img style="display: inline;" src="../img/btn_qq.jpg" alt="QQ登录" border="0"></a>
+		               </span>
+		               </p>
+		            </div>
+		            
+		        </div>
+		        </div>
+		        <input type="hidden" id="alipaysubmit" />
+		        <!-- 右侧注册部分end -->
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer" class="footer footer-simp">
+	<div class="foot-license"> 
+ <span class="top100">消费者最喜爱的网站TOP100</span> 
+ <span class="sep">|</span> 
+ <span class="year18">仅限18周岁以上人士购买</span> 
+ <span class="sep">|</span> 
+ <a target="_blank" href="" style="color:#999999;"><span class="shzxw">网络社会征信网</span></a> 
+ <span class="sep">|</span> 
+ <span class="shgs">上海工商</span> 
+ <span class="sep">|</span> 
+ <span>京公网安备11010502013828</span> 
+</div> 
+<div class="foot-copyright e-imageload">
+  Copyright 2006-2015 也买酒 yesmywine.com 版权所有 
+ <span class="sep">|</span> 
+ <a href="" target="_blank" style="color:#999">沪ICP备15036938号</a> 
+ <br /> 
+ <div class="cx">
+  <span class="float"> <a id="___szfw_logo___" href="" target="_blank"> <img src="../img/chengxin.png" width="112" height="40" align="absmiddle"  /></a></span> 
+  <span class="float" style="margin-left:10px;display:inline"><a href="" target="_block"><img src="../img/jiujiao.jpg" style="opacity: 1;" height="40" width="112" alt="沪公网备" /></a></span> 
+ </div> 
+</div></div>
+</body>
+</html>

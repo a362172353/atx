@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src='angular-demo-yao_angular_route/js/angular.js'></script>
+	</head>
+	<body>
+		<div ng-app='directive'>
+		<div expend data-type="456" expend-data="456"></div>
+		<div expend></div>
+		<expend></expend>
+		</div>
+		<script>
+			var app = angular.module('directive',[]);
+			app.directive('expend',[function(){
+				return {
+					restrict : 'EA',
+					replace : true,
+					transclude : true,
+					scope : {
+						text : '=expendData',
+					},
+					template: '<div><div class="title" ng-click="toggle()">{{title}}</div><div class="body" ng-show="showMe">这是内容</div></div>',
+					link : function(scope, element, attrs){
+						scope.title = "我们的第一个组件";
+						scope.showMe = true;
+						scope.toggle = function() {
+						scope.showMe = !scope.showMe;
+						}
+					}
+				}
+			}])
+		</script>
+	</body>
+</html>
